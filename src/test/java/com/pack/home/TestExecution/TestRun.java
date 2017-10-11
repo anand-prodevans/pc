@@ -41,26 +41,50 @@ public class TestRun {
 	@Test(priority = 3, description="Tries to navigate to Parental Control (passes)")
 	public void advancedlink() throws InterruptedException, IOException {
 		lib.waitAndClickForID("advancedlink", "dashboard", "ID");
-	}*/
-	
-	@Test(priority = 4, description="Tries to navigate to Blocked List (passes)")
+		
+		
+		
+		@Test(priority = 4, description="Tries to navigate to Blocked List (passes)")
 	public void selectlink() throws InterruptedException, IOException {
 		lib.waitAndClickForID("selectlink", "dashboard", "ID");
 	}
+	}*/
 	
-	/*@Test(priority = 4, description="Tries to navigate to Parental Control (passes)")
+	
+	@Test(priority = 4, description="Tries to navigate to Blocked List (passes)")
+	public void advancedlink() throws InterruptedException, IOException {
+		lib.waitAndClickForID("advancedlink", "dashboard", "ID");
+	}
+	
+	@Test(priority = 4, description="Tries to navigate to Advanced List (passes)")
 	public void selectlink() throws InterruptedException, IOException {
 		try {
-			Thread.sleep(2000);
-			lib.FindElement(By.id("business_and_economy"));
+			Thread.sleep(1000);
+			((WebDriver) lib).findElement(By.cssSelector("label[for='auctions']")).click();
 			
 		}catch(Exception e) {
 			System.out.println(e);
 		}
 		
 		//lib.waitAndClickForID("selectlink", "dashboard", "ID");
-	}*/
+	}
+	
+	
+	@Test(priority = 4, description="Tries to navigate to Blocked List (passes)")
+	public void selectlink2() throws InterruptedException, IOException {
+		try {
+			Thread.sleep(1000);
+			((WebDriver) lib).findElement(By.cssSelector("label[for='abortion']")).click();
+			
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		
+		//lib.waitAndClickForID("selectlink", "dashboard", "ID");
+	}
 
+	
+	
 	@Test(priority = 4, description="Tries to navigate to Blocked List (passes)")
 	public void blockedlink() throws InterruptedException, IOException {
 		lib.waitAndClickForID("blockedlink", "dashboard", "ID");
@@ -69,6 +93,12 @@ public class TestRun {
 	@Test(priority = 5, description="Tries to navigate to Custom List (passes)")
 	public void customlink() throws InterruptedException, IOException {
 		lib.waitAndClickForID("customlink", "dashboard", "ID");
+	}
+	
+	@Test(priority = 8, description="Perform Send Mail for New Connection (passes)")
+	public void Customurl() throws InterruptedException, IOException {
+		lib.jsSendKeysForID("url", "www.facebook.com", "dashboard", "ID");
+		lib.waitAndClickForID("Customurl", "dashboard", "ID");
 	}
 	/*
 	@Test(priority = 1, description="Tries to navigate to About US Page (passes)")
