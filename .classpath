@@ -28,6 +28,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/ANAND/.m2/repository/org/seleniumhq/selenium/selenium-api/3.0.1/selenium-api-3.0.1.jar" sourcepath="C:/Users/ANAND/.m2/repository/org/seleniumhq/selenium/selenium-api/3.0.1/selenium-api-3.0.1-sources.jar">
+		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
 			<attribute name="maven.artifactId" value="selenium-api"/>

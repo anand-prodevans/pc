@@ -20,7 +20,7 @@ public class TestRun {
 		driver = Dlib.openBrowser("chrome");
 		lib = new LibraryForGenericFunction(driver);
 		// Application link will be opened
-		driver.get("http://52.172.206.165/zeno/login");
+		driver.get("http://www.oneeight.co.in/zeno/login");
 	}
 	
 	@Test(priority = 2, description="Performs an successful login and checks the dashboard url (passes)")
