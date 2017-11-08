@@ -8,12 +8,12 @@ public class ExtentManager {
 	
 	public static ExtentReports getInstance(){
 		if (extent == null) {
-			extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ZenoExtentReport.html", true);
+			extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReport.html", true);
 			extent.loadConfig(new File(System.getProperty("user.dir") + "\\extent-config.xml"));
 			extent
-			.addSystemInfo("Host Name", "http://www.oneeight.co.in/zeno/login")
+			.addSystemInfo("Host Name", "http://52.172.221.191/zeno/login")
 			.addSystemInfo("Environment", "DEMO")
-			.addSystemInfo("Application", "Zeno");
+			.addSystemInfo("Application", "Youthinc");
 		}
 		return extent;
 	}

@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
       <class name="com.pack.home.TestExecution.TestRun">
         <methods>
-          <include name="customlink"/>
+          <include name="clickPrivacy"/>
+          <include name="clickTopUp"/>
           <include name="Customurl"/>
+          <include name="selectlink2"/>
+          <include name="sendnowrequest"/>
+          <include name="blockedlink"/>
+          <include name="timeblock"/>
+          <include name="dayblock"/>
+          <include name="customlink"/>
+          <include name="Schedulelink"/>
+          <include name="clickProfile"/>
+          <include name="clickPayment"/>
+          <include name="sendfeedback"/>
+          <include name="selectlink"/>
+          <include name="sendlink"/>
+          <include name="dateschedule"/>
+          <include name="unsuccessfullogin"/>
+          <include name="clickService"/>
+          <include name="clickknowcpe"/>
           <include name="parentallink"/>
           <include name="advancedlink"/>
+          <include name="dayschedule"/>
+          <include name="clickRefund"/>
+          <include name="verifyWelcomeMesg"/>
+          <include name="clickTerms"/>
+          <include name="logout"/>
+          <include name="dateblock"/>
           <include name="executing"/>
+          <include name="clickPlan"/>
+          <include name="clickfaq"/>
           <include name="login"/>
-          <include name="afterMethod"/>
-          <include name="blockedlink"/>
+          <include name="clickPayBill"/>
+          <include name="clickcontact"/>
+          <include name="clickfeedback"/>
+          <include name="timeschedule1"/>
         </methods>
       </class> <!-- com.pack.home.TestExecution.TestRun -->
     </classes>
